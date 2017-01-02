@@ -29,11 +29,7 @@ target 'ArtsyFolio' do
     pod 'ORStackView'
     pod "Artsy+Authentication", :subspecs => ["email"]
 
-    if ENV['ARTSY_STAFF_MEMBER'] || ENV['CI'] == 'true'
-        pod 'Artsy+UIFonts', :git => "https://github.com/artsy/Artsy-UIFonts.git", :branch => "old_fonts_new_lib"
-    else
-      pod 'Artsy+OSSUIFonts'
-    end
+    pod 'Artsy+OSSUIFonts'
 
 
     # Nicities
