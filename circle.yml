@@ -28,6 +28,7 @@ machine:
 dependencies:
   override:
     - bundle check --path=vendor/bundle || bundle install --path=vendor/bundle --jobs=4 --retry=3 --without development
+    - curl http://cocoapods-specs.s3-website-us-east-1.amazonaws.com/fetch-cocoapods-repo-from-s3.sh | bash
     - make oss
   cache_directories:
     - vendor/bundle
