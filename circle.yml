@@ -21,6 +21,7 @@ machine:
     IntercomAPIKey : from_adminds
     SegmentProduction : from_admidsan
     SegmentBeta	: from_admindsa
+    SegmentDev : dasjdlaksjdlks
     HOCKEY_API_TOKEN : from_admdsain
     SLACK_URL : from_admindsa
 
